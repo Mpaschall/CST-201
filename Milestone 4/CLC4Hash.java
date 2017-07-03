@@ -68,6 +68,14 @@ public class CLC4Hash {
 		example.addClients();
 		example.displayTable();
 		example.searchTable(1234567, 4);
+		
+		//get input from user and use searchTable to find hash
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter your name");
+		name = in.nextLine();
+		System.out.println("Enter your 7 digit number");
+		key = in.nextInt();
+		searchTable(key, name.length());
 	}
 }
 
